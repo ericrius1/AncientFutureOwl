@@ -481,7 +481,7 @@ export function Owl() {
       Math.sin(state.clock.elapsedTime * 2),
       -1,
       1,
-      10,
+      1000,
       10000
     )
     eyeLight.current.intensity = intensity
