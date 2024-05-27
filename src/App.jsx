@@ -57,7 +57,7 @@ export default function App() {
           <Scene />
           {/* <Perf position="top-left" /> */}
           <OrbitControls
-            enabled={true}
+            enabled={false}
             makeDefault
             zoomSpeed={0.3}
             dampingFactor={0.3}
