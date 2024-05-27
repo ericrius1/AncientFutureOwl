@@ -477,14 +477,21 @@ export function Owl() {
     }
     damp(owl.scene.rotation, "y", targetRotationY.current, 5, delta, 1)
 
-    const intensity = mapLinear(
-      Math.sin(state.clock.elapsedTime * 2),
-      -1,
-      1,
-      1000,
-      10000
-    )
-    eyeLight.current.intensity = intensity
+    if (!chargeStarted) {
+      const intensity = mapLinear(
+        Math.sin(state.clock.elapsedTime * 2),
+        -1,
+        1,
+        1000,
+        10000
+      )
+      eyeLight.current.intensity = intensity
+    } else {
+      if (charging.current) {
+        eyeLight.current.intensity += delta * 10000
+      }
+      eyeLight.current.intensity *= 0.99
+    }
   })
 
   const hitbox = useRef()
