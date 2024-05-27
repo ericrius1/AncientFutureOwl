@@ -97,7 +97,7 @@ export function Owl() {
     "leftlens",
     {
       lightDecay: {
-        value: 0.72,
+        value: 0.55,
         min: 0.1,
         max: 4,
         step: 0.01,
