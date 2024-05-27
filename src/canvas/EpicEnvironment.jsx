@@ -43,7 +43,9 @@ export function EpicEnvironment() {
 
   useEffect(() => {
     if (started) {
-      targetEnvIntensity.current = 0.9
+      setTimeout(() => {
+        targetEnvIntensity.current = 0.9
+      }, 1500)
     }
   }, [started])
   useFrame((state, delta) => {

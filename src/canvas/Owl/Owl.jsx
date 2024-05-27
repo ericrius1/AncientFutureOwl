@@ -122,7 +122,7 @@ export function Owl() {
       },
 
       color: {
-        value: "#009dc2",
+        value: "#6ee4ff",
         min: 0,
         max: 1,
         step: 0.01,
@@ -179,7 +179,7 @@ export function Owl() {
         },
       },
       normalScale: {
-        value: 0.16,
+        value: 0.32,
         min: 0,
         max: 1,
         step: 0.01,

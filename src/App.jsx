@@ -33,7 +33,7 @@ export default function App() {
         collapsed={false}
         oneLineLabels={false}
         flat={true}
-        hidden
+        // hidden
         theme={{
           sizes: {
             titleBarHeight: "28px",
