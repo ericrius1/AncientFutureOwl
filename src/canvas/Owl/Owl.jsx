@@ -390,7 +390,8 @@ export function Owl() {
       const centerMid = mid.clone()
 
       const lineWidth = mapLinear(
-        Math.sin(state.clock.elapsedTime * 20),
+        Math.sin(state.clock.elapsedTime * 20) *
+          Math.cos(state.clock.elapsedTime * 7),
         -1,
         1,
         2,
