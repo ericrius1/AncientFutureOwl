@@ -77,12 +77,12 @@ export function Owl() {
       setAlreadyStarted(true)
       setTimeout(() => {
         lightIntensityTarget.current = maxLightIntensity
-      }, 1500)
+      }, 1000)
 
       setTimeout(() => {
         targetPosition.current.sub(new THREE.Vector3(2, 0, 30))
         targetRotationY.current = -0.1
-      }, 2000)
+      }, 1500)
     }
   }, [started])
 
@@ -501,7 +501,7 @@ export function Owl() {
 
   function release() {
     charging.current = false
-    gearRotationSpeed.current *= -1
+    // gearRotationSpeed.current *= -1
     api.stopMagnetized()
   }
 
